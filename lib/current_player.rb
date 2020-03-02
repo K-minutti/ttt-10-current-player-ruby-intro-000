@@ -1,13 +1,13 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
+   $counter = 0
 
 def turn_count(board)
-   counter = 0
   if board.each {|position|
      position == "X" || "O"
-     counter += 1}
+     $counter += 1}
   return
-    counter
+    $counter
 end
 end
 
