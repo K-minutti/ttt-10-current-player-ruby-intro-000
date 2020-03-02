@@ -8,11 +8,7 @@ def turn_count(board)
   return
     $counter
 end
-
-# We will need to iterate over each member of the board array
-# check to see if that element is an "X" or an "O". If it is, we increment our counter variable by 1.
-#return value of turn_count should be number of turns that have been played
-
+end 
 
 def current_player(board_game)
   if $counter.even?
