@@ -1,5 +1,5 @@
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def turn_count(board)
   counter = 0
@@ -7,8 +7,7 @@ def turn_count(board)
   if position == "X" || position == "O"
      counter += 1
   end}
-  return
-     counter
+  return counter
 end
 
 def current_player(board)
