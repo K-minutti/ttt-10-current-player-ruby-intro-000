@@ -1,18 +1,19 @@
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-   $counter = 0
 
 def turn_count(board)
-  if board.each {|position|
-     position == "X" || "O"
-     $counter += 1}
+  board.each {|position|
+  if position == "X" || position == "O"
+     counter += 1
+  end}
   return
-    $counter
-end
+     counter
 end
 
+counter = 0
+board.each do |turn|
+
+
 def current_player(board_game)
-  if $counter.even?
+  if counter.even?
   return
    "X"
   else
