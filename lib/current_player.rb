@@ -4,14 +4,14 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn_count(board)
   counter = 0
   board.each {|position|
-  if position == "X" || position == "O" # or function to check if a board position is occupied by either an "X or "O"
+  if position == "X" || position == "O" # or operator to check if each board position is occupied by either an "X or "O"
   counter += 1
   end}
   return counter
 end
 
 def current_player(board)
-  if turn_count(board) % 2 == 0
+  if turn_count(board).even?
     return "X"
   else
     return "O"
