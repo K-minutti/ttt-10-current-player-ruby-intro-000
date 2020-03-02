@@ -3,7 +3,8 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def turn_count(board)
    counter = 0
-  if board.each {|position| position == "X" || "O"
+  if board.each {|position|
+     position == "X" || "O"
      counter += 1}
   return
     counter
