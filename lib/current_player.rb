@@ -1,11 +1,11 @@
 
-#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def turn_count(board)
   counter = 0
   board.each {|position|
-  if position == "X" || position == "O"
-     counter += 1
+  if position == "X" || position == "O" # or function to check if a board position is occupied by either an "X or "O"
+  counter += 1
   end}
   return counter
 end
